@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+/* Creat class */
+
+.main {
+    position: fixed;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px 15px 15px 15px;
+    width: 300px;
+    height: 520px;
+    box-shadow: 11px 11px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.image {
+    height: 270px;
+}
+
+.titleImage {
+    border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    margin: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    height: 270px;
+    margin: 15px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%);
+  }
+
+  .image:hover .overlay {
+    opacity: 0.5;
+  }
+
+  .ImageIcon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+  }
+
+.title {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px; 
+}
+
+.description {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color:hsl(215, 51%, 70%);
+}
+
+.crypto {
+    float: left;
+    width: 49%;
+    margin-left: 20px;
+}
+
+.cryptoIcon {
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 12%;
+}
+
+.cryptoText {
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 60%;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    float: left;
+    width: 40%;
+}
+
+.timeIcon {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    margin-left: 11px;
+    float: left;
+}
+
+.timeText {
+    justify-content: top;
+    align-content: flex-start;
+    margin-left: 8px;
+    float: left;
+    width: 70%;
+    color:hsl(215, 51%, 70%);
+}
+
+.avatar {
+    margin-left: 20px;
+    font-size: 18px;
+}
+.avatarImage {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: hsl(215, 51%, 70%);
+    border-radius: 25px;
+    width: 30px;
+}
+
+.avatarImageDiV {
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.avatarTextDiv {
+    justify-content: top;
+    align-content: flex-start;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+    width: 70%;
+    font-size: 16px;
+    color:hsl(215, 51%, 70%);
+}
+
+.attribution {
+    color: white;
+    margin: auto;
+    margin-top: 170%;
+    text-align: center;
+}
+
+/* HTML Tags */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+
+hr {
+    margin: 20px;
+    border: 0;
+    height: 0;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    opacity: 0.3;
+}
